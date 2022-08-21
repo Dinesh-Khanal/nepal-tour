@@ -38,42 +38,40 @@ interface IProps {
 
 const TourCard = ({ tour }: IProps) => {
   return (
-    <Grid item xs={3}>
-      <ThemeProvider theme={theme}>
-        <Box>
-          <Paper elevation={2}>
-            <Image src={tour.image} alt={tour.name} />
-            <Box paddingX={1}>
-              <Typography variant="subtitle2">{tour.name}</Typography>
-              <SubContent>
-                <AccessTime sx={{ width: 12.5 }} />
-                <Typography variant="body2" component="p" marginLeft={0.5}>
-                  {tour.duration}
-                </Typography>
-              </SubContent>
-              <SubContent>
-                <Rating
-                  name="read-only"
-                  value={tour.rating}
-                  readOnly
-                  precision={0.5}
-                  size="small"
-                />
-                <Typography variant="body2" component="p" marginLeft={0.5}>
-                  {tour.rating}
-                </Typography>
-                <Typography variant="body1" marginLeft={0.5}>
-                  ({tour.numberOfReviews} reviews)
-                </Typography>
-              </SubContent>
-              <Typography variant="h6" component="h3">
-                Cost Rs {tour.price}
+    <ThemeProvider theme={theme}>
+      <Box>
+        <Paper elevation={2}>
+          <Image src={tour.image} alt={tour.name} />
+          <Box paddingX={1}>
+            <Typography variant="subtitle2">{tour.name}</Typography>
+            <SubContent>
+              <AccessTime sx={{ width: 12.5 }} />
+              <Typography variant="body2" component="p" marginLeft={0.5}>
+                {tour.duration}
               </Typography>
-            </Box>
-          </Paper>
-        </Box>
-      </ThemeProvider>
-    </Grid>
+            </SubContent>
+            <SubContent>
+              <Rating
+                name="read-only"
+                value={tour.rating}
+                readOnly
+                precision={0.5}
+                size="small"
+              />
+              <Typography variant="body2" component="p" marginLeft={0.5}>
+                {tour.rating}
+              </Typography>
+              <Typography variant="body1" marginLeft={0.5}>
+                ({tour.numberOfReviews} reviews)
+              </Typography>
+            </SubContent>
+            <Typography variant="h6" component="h3">
+              Cost Rs {tour.price}
+            </Typography>
+          </Box>
+        </Paper>
+      </Box>
+    </ThemeProvider>
   );
 };
 export default TourCard;
