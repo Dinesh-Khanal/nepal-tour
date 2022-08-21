@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TourCard from "./components/TourCard";
+import { Container, Grid, Typography } from "@mui/material";
+import NavBar from "./components/NavBar";
+import places from "./data.json";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Container maxWidth="md" sx={{ marginY: 3 }}>
+        {places.map((place) => (
+          <div>
+            <Typography
+              variant="h4"
+              component="h2"
+              key={place.id}
+              marginTop={5}
+            >
+              {place.name}
+            </Typography>
+            <Grid container spacing={2}>
+              {place.tours.map((tour) => (
+                <TourCard tour={tour} key={tour.id} />
+              ))}
+            </Grid>
+          </div>
+        ))}
+      </Container>
     </div>
   );
-}
+};
 
 export default App;

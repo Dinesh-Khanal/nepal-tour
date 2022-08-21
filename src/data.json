@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Mount Everest Tour",
+    "tours": [
+      {
+        "id": 1,
+        "name": "Lukla Airport",
+        "duration": "30 minutes flight",
+        "rating": 4.5,
+        "numberOfReviews": 432,
+        "price": 452,
+        "image": "https://goodkarmatrekking.com/images/3E7A0411.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Trecking to Namche Bazar",
+        "duration": "1 day treck",
+        "rating": 4.5,
+        "numberOfReviews": 542,
+        "price": 100,
+        "image": "https://excitingnepal.com/wp-content/uploads/2019/08/namche-III.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Everest Base Camp",
+        "duration": "1 day treck",
+        "rating": 4.5,
+        "numberOfReviews": 542,
+        "price": 5000,
+        "image": "https://mosaicadventure.com/wp-content/uploads/2022/03/everest_base_camp_trek-1290x540.jpeg"
+      },
+      {
+        "id": 4,
+        "name": "Mt. Everest",
+        "duration": "15 day treck",
+        "rating": 4.5,
+        "numberOfReviews": 542,
+        "price": 50000,
+        "image": "https://lh3.googleusercontent.com/ci/AC_FhM9c0G3AGKvxBdTZDd6DpwFbAOg21vnGBQOJnxAwVEzA-STrz961JNxfEiM-V4522eRv_ay5yISR"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Chitwan National Park",
+    "tours": [
+      {
+        "id": 1,
+        "name": "Narayan Ghat",
+        "duration": "30 minutes flight",
+        "rating": 4,
+        "numberOfReviews": 532,
+        "price": 452,
+        "image": "https://www.holidify.com/images/cmsuploads/compressed/9231303937_48e814cc79_b_20181013150712_20181013150956.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Sauraha Chitawan",
+        "duration": "2 day",
+        "rating": 4.5,
+        "numberOfReviews": 542,
+        "price": 1200,
+        "image": "https://worldtravelfamily.com/wp-content/uploads/2018/10/Sauraha-Nepal.-Chitwan-National-Park.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Safari in National Park",
+        "duration": "1 day",
+        "rating": 4.5,
+        "numberOfReviews": 542,
+        "price": 2000,
+        "image": "https://i0.wp.com/theujyaalonepal.com/wp-content/uploads/2019/02/1795709_505357879573852_1603847718_n.jpg?fit=960%2C414&ssl=1"
+      },
+      {
+        "id": 4,
+        "name": "Maulakalika Darshan",
+        "duration": "1 hour treck",
+        "rating": 4.5,
+        "numberOfReviews": 542,
+        "price": 500,
+        "image": "https://www.imnepal.com/wp-content/uploads/2017/10/Maulakalika-Temple-Mandir-Nepal.jpg"
+      }
+    ]
+  }
+]
